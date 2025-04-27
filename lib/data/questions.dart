@@ -1,124 +1,133 @@
-import '../models/questions.dart';
-import '../models/answers.dart';
-import '../models/personalities.dart';
+import 'package:personality_test_assignment2/models/answer.dart';
+import 'package:personality_test_assignment2/models/personality_type.dart';
+import 'package:personality_test_assignment2/models/question.dart';
 
-/// A list of personality test questions with answers mapped to personalities.
+/// A list of personalityType test questions with answers mapped to personalities.
 final List<Question> questions = [
   Question(
-    text: 'How do you approach a difficult decision?',
+    question: 'How do you approach a difficult decision?',
     answers: [
       Answer(
-        text: 'Analyze all options logically',
-        personality: Personalities.Thinker,
+        answer: 'Analyze all options logically',
+        personalityType: Personalities.thinker,
       ),
       Answer(
-        text: 'Go with what feels right emotionally',
-        personality: Personalities.Feeler,
+        answer: 'Go with what feels right emotionally',
+        personalityType: Personalities.feeler,
       ),
       Answer(
-        text: 'Make a checklist and plan it out',
-        personality: Personalities.Planner,
+        answer: 'Make a checklist and plan it out',
+        personalityType: Personalities.planner,
       ),
       Answer(
-        text: 'Take a leap and deal with results later',
-        personality: Personalities.Adventurer,
+        answer: 'Take a leap and deal with results later',
+        personalityType: Personalities.adventurer,
       ),
     ],
   ),
   Question(
-    text: 'What excites you the most?',
+    question: 'What excites you the most?',
     answers: [
       Answer(
-        text: 'Solving complex problems',
-        personality: Personalities.Thinker,
+        answer: 'Solving complex problems',
+        personalityType: Personalities.thinker,
       ),
       Answer(
-        text: 'Connecting deeply with others',
-        personality: Personalities.Feeler,
+        answer: 'Connecting deeply with others',
+        personalityType: Personalities.feeler,
       ),
       Answer(
-        text: 'Creating a clear path to your goals',
-        personality: Personalities.Planner,
+        answer: 'Creating a clear path to your goals',
+        personalityType: Personalities.planner,
       ),
       Answer(
-        text: 'Exploring something new',
-        personality: Personalities.Adventurer,
+        answer: 'Exploring something new',
+        personalityType: Personalities.adventurer,
       ),
     ],
   ),
   Question(
-    text: 'Which best describes your work style?',
+    question: 'Which best describes your work style?',
     answers: [
       Answer(
-        text: 'Detail-focused and logical',
-        personality: Personalities.Thinker,
+        answer: 'Detail-focused and logical',
+        personalityType: Personalities.thinker,
       ),
       Answer(
-        text: 'People-centered and intuitive',
-        personality: Personalities.Feeler,
+        answer: 'People-centered and intuitive',
+        personalityType: Personalities.feeler,
       ),
       Answer(
-        text: 'Organized and systematic',
-        personality: Personalities.Planner,
+        answer: 'Organized and systematic',
+        personalityType: Personalities.planner,
       ),
       Answer(
-        text: 'Flexible and spontaneous',
-        personality: Personalities.Adventurer,
+        answer: 'Flexible and spontaneous',
+        personalityType: Personalities.adventurer,
       ),
     ],
   ),
   Question(
-    text: 'How do you recharge after a long day?',
+    question: 'How do you recharge after a long day?',
     answers: [
       Answer(
-        text: 'Quiet reflection or reading',
-        personality: Personalities.Thinker,
+        answer: 'Quiet reflection or reading',
+        personalityType: Personalities.thinker,
       ),
       Answer(
-        text: 'Spending time with close friends',
-        personality: Personalities.Feeler,
+        answer: 'Spending time with close friends',
+        personalityType: Personalities.feeler,
       ),
       Answer(
-        text: 'Planning tomorrow\'s tasks',
-        personality: Personalities.Planner,
+        answer: 'Planning tomorrow\'s tasks',
+        personalityType: Personalities.planner,
       ),
       Answer(
-        text: 'Doing something active or exciting',
-        personality: Personalities.Adventurer,
+        answer: 'Doing something active or exciting',
+        personalityType: Personalities.adventurer,
       ),
     ],
   ),
   Question(
-    text: 'You\'re most comfortable when...',
+    question: 'You\'re most comfortable when...',
     answers: [
       Answer(
-        text: 'Things make logical sense',
-        personality: Personalities.Thinker,
+        answer: 'Things make logical sense',
+        personalityType: Personalities.thinker,
       ),
       Answer(
-        text: 'Everyone is getting along',
-        personality: Personalities.Feeler,
+        answer: 'Everyone is getting along',
+        personalityType: Personalities.feeler,
       ),
       Answer(
-        text: 'There\'s a clear structure',
-        personality: Personalities.Planner,
+        answer: 'There\'s a clear structure',
+        personalityType: Personalities.planner,
       ),
       Answer(
-        text: 'You\'re free to try new things',
-        personality: Personalities.Adventurer,
+        answer: 'You\'re free to try new things',
+        personalityType: Personalities.adventurer,
       ),
     ],
   ),
   Question(
-    text: 'Your biggest strength is...',
+    question: 'Your biggest strength is...',
     answers: [
-      Answer(text: 'Thinking critically', personality: Personalities.Thinker),
       Answer(
-        text: 'Empathizing with others',
-        personality: Personalities.Feeler,
+        answer: 'Thinking critically',
+        personalityType: Personalities.thinker,
       ),
-      Answer(text: 'Staying organized', personality: Personalities.Planner),
-      Answer(text: 'Being adventurous', personality: Personalities.Adventurer),
+      Answer(
+        answer: 'Empathizing with others',
+        personalityType: Personalities.feeler,
+      ),
+      Answer(
+        answer: 'Staying organized',
+        personalityType: Personalities.planner,
+      ),
+      Answer(
+        answer: 'Being adventurous',
+        personalityType: Personalities.adventurer,
+      ),
     ],
   ),
 ];
